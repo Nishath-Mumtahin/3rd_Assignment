@@ -7,9 +7,18 @@
     <!-- DaisyUi+Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <!-- Navbar -->
+<body class="font-sora">
+   <header class="bg-gradient-to-r" style="background: linear-gradient(to right, #FFFFFF, #EFEBE3);">
+         <!-- Navbar -->    
+          <nav>
     <div class="navbar lg:border-none sm:flex justify-between p-4 border-b border-green-600 ">
         <div class="navbar-start">
          <a class="btn btn-ghost"><img src="Images/logo-header.png" alt="nature's platter logo"></a>
@@ -72,9 +81,280 @@
           <button class="btn btn-success text-white hidden sm:block">Register</button>
           </div>
         </div>
+      </div>
+    </nav>
+
+
+    <!-- hero section -->
+    <div>
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-4xl font-bold">Freshness <span class="text-green-600">You Can
+               Count</span> On, Prices You’ll Love!</h1>
+            <p class="py-6">
+                Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+            </p>
+            <img
+            src="Images/hero-vegetables.png"
+            class="max-w rounded-lg" />
+            <button class="btn btn-outline btn-success text-black my-8 animate-spin">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Biriyani -->
+    <div
+    class="hero min-h-screen"
+    style="background-image: url(./Images/biriyani.png);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-4xl font-bold">BASMATI <span class="text-green-600">BIRIYANI</span></h1>
+        <p class="py-6">
+          Savor our Basmati Biriyani, made with premium rice for unmatched flavor!
+      </p>
+      <a href="">        
+        <button class="btn btn-success text-white">Get Started</button>
+      </a>
+      </div>
+    </div>
+  </div>
+   </header>
+
+   <!-- Services section -->
+    <section>
+      <h1 class="text-3xl text-green-600 font-semibold mt-10 ml-8">Services</h1>
+      <div class="grid grid-cols-1 mt-5 ml-8 md:grid-cols-3 place-content-around gap-4">
+        <div class="card glass w-96 bg-[#EFEBE3]">
+          <figure>
+            <img
+          class="mask mask-circle my-4"
+          src="Images/service.png" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">24/7 Services </h2>
+            <p>Available anytime, ensuring support and convenience whenever you need</p>
+           </div>
+        </div>
+        
+        
+        <div class="card glass w-96 bg-[#EFEBE3]">
+          <figure>
+            <img
+          class="mask mask-circle my-4"
+          src="Images/delivery.png" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Fast Delivery</h2>
+            <p>Quick and reliable delivery, so you never have to wait too long</p>
+          </div>
+        </div>
+        
+        
+        <div class="card glass w-96 bg-[#EFEBE3]">
+          <figure>
+            <img
+          class="mask mask-circle my-4"
+          src="Images/healthy.png" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Healthy Products</h2>
+            <p>Fresh, natural, and safe products for a healthier lifestyle</p>
+            </div>
+        </div>
+      </div>
+    </section>
+   
+
+     <!-- Popular Products section -->
+     <section class="mt-20 bg-gradient-to-r" style="background: linear-gradient(to right, #FFFFFF, #EFEBE3);">
+      <h1 class="text-3xl text-green-600 font-semibold mt-10 ml-8">Popular Products</h1>
+      <div class="grid grid-cols-1  md:grid-cols-4 gap-6 mt-2 ml-5 mr-5 mb-4">
+        
+        <!-- Veg Card -->
+        <div class="card relative p-6 h-full bg-gradient-to-r from-[#53DB3A] to-[#FFFFFF] rounded-lg flex flex-col justify-center sm:items-center">
+          <figure class="absolute bottom-0 right-0">
+            <img
+              src="Images/vegetable-offer.png"
+              class="w-full object-cover z-0" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-white">30% off</h2>
+            <p class="z-10">Discover a world of treats, toys, and essentials handpicked for </p>
+            <button class="btn z-10">Buy Now</button>
+          </div>
+        </div>
+
+       <!-- Review section -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 col-span-3">
+
+          <!-- Review-1 -->
+          <div class="card bg-white rounded-lg shadow-md p-4 flex flex-row items-center">
+            <figure>
+              <img
+                src="Images/onion.png"
+                class="bg-[#EFEBE3] w-16 h-16 object-contain rounded-lg" />
+            </figure>
+            <div class="card-body items-center text-center p-2">
+              <div class="rating">⭐  4.5</div>
+              <h2 class="card-title text-md font-bold">Onion 1 KG</h2>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- Review-2 -->
+          <div class="card bg-white rounded-lg shadow-md p-4 flex flex-row items-center">
+            <figure>
+              <img
+                src="Images/tomato.png"
+                class="bg-[#EFEBE3] w-16 h-16 object-contain rounded-lg" />
+            </figure>
+            <div class="card-body items-center text-center p-2">
+              <div class="rating">⭐  4.5</div>
+              <h2 class="card-title text-md font-bold">Tomato 500 g</h2>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- Review-3 -->
+          <div class="card bg-white rounded-lg shadow-md p-4 flex flex-row items-center">
+            <figure>
+              <img
+                src="Images/potato.png"
+                class="bg-[#EFEBE3] w-16 h-16 object-contain rounded-lg" />
+            </figure>
+            <div class="card-body items-center text-center p-2">
+              <div class="rating">⭐  4.5</div>
+              <h2 class="card-title text-md font-bold">Potato 1 KG</h2>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- Review-4 -->
+          <div class="card bg-white rounded-lg shadow-md p-4 flex flex-row items-center">
+            <figure>
+              <img
+                src="Images/tomato.png"
+                class="bg-[#EFEBE3] w-16 h-16 object-contain rounded-lg" />
+            </figure>
+            <div class="card-body items-center text-center p-2">
+              <div class="rating">⭐  4.5</div>
+              <h2 class="card-title text-md font-bold">Tomato 500 g</h2>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- Review-5 -->
+          <div class="card bg-white rounded-lg shadow-md p-4 flex flex-row items-center">
+            <figure>
+              <img
+                src="Images/onion.png"
+                class="bg-[#EFEBE3] w-16 h-16 object-contain rounded-lg" />
+            </figure>
+            <div class="card-body items-center text-center p-2">
+              <div class="rating">⭐  4.5</div>
+              <h2 class="card-title text-md font-bold">Onion 1 KG</h2>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- Review-6 -->
+          <div class="card bg-white rounded-lg shadow-md p-4 flex flex-row items-center">
+            <figure>
+              <img
+                src="Images/tomato.png"
+                class="bg-[#EFEBE3] w-16 h-16 object-contain rounded-lg" />
+            </figure>
+            <div class="card-body items-center text-center p-2">
+              <div class="rating">⭐  4.5</div>
+              <h2 class="card-title text-md font-bold">Tomato 500 g</h2>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- Review-7 -->
+          <div class="card bg-white rounded-lg shadow-md p-4 flex flex-row items-center">
+            <figure>
+              <img
+                src="Images/onion.png"
+                class="bg-[#EFEBE3] w-16 h-16 object-contain rounded-lg" />
+            </figure>
+            <div class="card-body items-center text-center p-2">
+              <div class="rating">⭐  4.5</div>
+              <h2 class="card-title text-md font-bold">Onion 1 KG</h2>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- Review-8 -->
+          <div class="card bg-white rounded-lg shadow-md p-4 flex flex-row items-center">
+            <figure>
+              <img
+                src="Images/potato.png"
+                class="bg-[#EFEBE3] w-16 h-16 object-contain rounded-lg" />
+            </figure>
+            <div class="card-body items-center text-center p-2">
+              <div class="rating">⭐  4.5</div>
+              <h2 class="card-title text-md font-bold">Potato 1 KG</h2>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <!-- Review-9 -->
+          <div class="card bg-white rounded-lg shadow-md p-4 md:flex flex-row items-center hidden sm:block ">
+            <figure>
+              <img
+                src="Images/potato.png"
+                class="bg-[#EFEBE3] w-16 h-16 object-contain rounded-lg" />
+            </figure>
+            <div class="card-body items-center text-center p-2">
+              <div class="rating">⭐  4.5</div>
+              <h2 class="card-title text-md font-bold">Potato 1 KG</h2>
+              <p>$39.99</p>
+            </div>
+          </div>
+
+
+        </div>  
+      </div>
+    </section>
+
+
+     <!-- Arrival & Offers section -->
+     <section class="mt-20">
+      <h1 class="text-3xl text-green-600 font-semibold mt-10 ml-8">Arrival & Offers</h1>
+      <div class="grid grid-cols-1 mt-5 ml-8 md:grid-cols-2 place-content-around gap-64">
+        <!-- Card-1 -->
+        <div class="card w-[750px] bg-[#115414] rounded-lg shadow-md p-4 flex flex-row items-center">
+          
+          <div class="card-body items-center text-center p-2 font-poppins">
+            <div>
+              <img class="max-h-12 w-full object-contain" src="Images/dawat-logo.png" alt="Transistor" width="158" height="48">
+            </div>
+            <button class="btn btn-wide bg-green-500 text-white text-lg border border-none">Cook Exotic Dishes</button>
+            <h2 class="card-title text-3xl text-white">UP to <span class="font-extrabold">20% OFF</span></h2>
+          </div>
+          <figure>
+            <img
+              src="Images/dawat-mock-up.png"
+              class="bg-[#115414] h-full w-full object-contain rounded-lg" />
+          </figure>
+        </div>
+
+
+        <!-- Card-2 -->
+        <div class="card w-[520px] bg-[#102861] rounded-lg shadow-md p-4 flex flex-row items-center">
+          
+          <div class="card-body items-center text-center p-2 font-poppins">
+            <div>
+              <img class="max-h-12 w-full object-contain" src="Images/india-gate-logo.png" alt="Transistor" width="158" height="48">
+            </div>
+            <button class="btn btn-wide bg-[#2A4D97] text-white text-lg border border-none">World’s No.1 Rice</button>
+            <h2 class="card-title text-3xl text-white">UP to <span class="font-extrabold">40% OFF</span></h2>
+          </div>
+          <figure>
+            <img
+              src="Images/india-gate-mock-up.png"
+              class="bg-[#102861] h-full w-full object-contain rounded-lg" />
+          </figure>
+        </div>
 
       </div>
-
+    </section> 
+    
 </body>
 </html>
 
